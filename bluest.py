@@ -1,5 +1,4 @@
-#import serial
-
+import serial
 
 # функция проверки наличия COM-портов
 def test_com():
