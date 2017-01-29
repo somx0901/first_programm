@@ -1,4 +1,5 @@
 from tkinter import *
+from tkinter import ttk #чтобы кнопки и другие элементы были более красивые
 ###tkinter._test()
 ##root=Tk()
 ##canv=Canvas(root,width=400,height=400,bg='lightblue',cursor="pencil")
@@ -11,3 +12,12 @@ from tkinter import *
 ##canv.create_window(250,100,window=text) # чтобы кнопка была внутри canvas
 ##canv.pack()
 ##root.mainloop()
+
+root=Tk()
+Label(root,text="АЛКОТЕКТОР ЮПИТЕР BLUETOOTH").pack()
+button=ttk.Button(root,text="alcotector")
+button_old=Button(root,text="alcotector")
+button_old.pack()
+button.pack()
+
+root.mainloop()
