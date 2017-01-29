@@ -1,5 +1,5 @@
 import serial
-
+import os #
 # функция проверки наличия COM-портов
 def test_com():
     print("Программа проверяет доступные COM-порты")
@@ -81,7 +81,7 @@ def screening_mode(line):
         print("Результат:" + '\t' * 3 + "Алкоголь не обнаружен")
         print()
 
-
+print(os.name)
 test_com()
 com_number = input("Введите номер COM порта для связи с ЮПИТЕРОМ: ")
 com = "COM" + com_number
