@@ -13,11 +13,17 @@ from tkinter import ttk #чтобы кнопки и другие элемент�
 ##canv.pack()
 ##root.mainloop()
 
+
+def callback():
+    print("press")
+
 root=Tk()
 Label(root,text="АЛКОТЕКТОР ЮПИТЕР BLUETOOTH").pack()
 button=ttk.Button(root,text="alcotector")
-button_old=Button(root,text="alcotector")
-button_old.pack()
+##button_old=Button(root,text="alcotector")
+##button_old.pack()
+
+button.config(command=callback)
 button.pack()
 
 root.mainloop()
